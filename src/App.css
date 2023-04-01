@@ -1,38 +1,178 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: .7px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.cover-pic.random {
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.75)),
+    url("./asset/sunset.jpg");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cover-pic.winter {
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.75)),
+    url("./asset/snow.jpg");
+}
+
+.cover-pic.rain {
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.75)),
+    url("./asset/rain.jpg");
+}
+
+.cover-pic.cloud {
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.75)),
+    url("./asset/cloud.jpg");
+}
+
+.cover-pic.drizzle {
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.75)),
+    url("./asset/drizzle.jpg");
+}
+
+.cover-pic.mist {
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.75)),
+    url("./asset/mist.jpg");
+}
+
+.cover-pic.thunder {
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.75)),
+    url("./asset/thunderclouds.jpg");
+}
+
+.cover-pic.sunny {
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.75)),
+    url("./asset/sunny.jpg");
+}
+
+.cover-pic.haze {
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.75)),
+    url("./asset/haze.jpg");
+}
+
+.card {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 12vh;
+}
+
+.search {
+  border-radius: 5px;
+  border: 3px solid;
+  height: 32px;
+  width: 20rem;
+  padding: 5px;
+  position: sticky;
+  margin-top: 3vh;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar,
+.fas {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  height: 30px;
+  margin-top: -2.5px;
+  padding: 2px 0px;
+  color: rgb(60, 60, 60);
+  transition: 0.4s ease;
+}
+
+.search-bar {
+  width: 16.5rem;
+  font-weight: 500;
+  font-size: medium;
+}
+
+.search .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.fas {
+  width: 54px;
+  background: burlywood;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.fas:hover {
+  height: 35px;
+}
+
+.main {
+  width: 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
+  margin-top: 7px;
+  border-radius: 5px;
+  text-align: center;
+  color: wheat;
+}
+
+.location {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.temp {
+  font-size: 50px;
+  font-weight: 700;
+  text-shadow: 8px 8px rgba(43, 43, 43, 0.605);
+}
+
+.data2 .fa-solid {
+  font-size: 50px;
+  text-shadow: 8px 8px rgba(43, 43, 43, 0.605);
+}
+
+.loading {
+  margin-top: 300px;
+  font-size: xx-large;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list-box2 {
+  width: 98%;
+  height: 25rem;
+  padding: 2rem 0;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow-y: auto;
 }
